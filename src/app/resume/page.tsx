@@ -6,7 +6,7 @@ import { SiNextdotjs, SiTailwindcss } from 'react-icons/si';
 
 const about = {
     title: 'About Me',
-    description: "I'm a front end developer with a passion for creating beautiful and functional web applications. I have experience working with a variety of technologies, including HTML, CSS, JavaScript, React, Next.js and more. I'm always looking to learn new things and improve my skills, and I'm excited to take on new challenges and projects.",
+    description: "I'm a front end developer with a passion for creating beautiful and functional web applications. I have experience working with a variety of technologies, including HTML, CSS, JavaScript, React, Next.js and more. I'm always looking to learn new things and improve my skills.",
     info: [
         {
             fieldName: 'Name',
@@ -42,7 +42,7 @@ const about = {
 const experience = {
     icon: "",
     title: 'Experience',
-    description: "lorem ipsum dolor sit amet",
+    description: "I worked at various companies and gained experience in different areas.",
     items: [
         {
             company: "Radius Inc.",
@@ -70,7 +70,7 @@ const experience = {
 const education = {
     icon: "",
     title: 'My education',
-    description: "lorem ipsum dolor sit amet",
+    description: "I have a background in computer science and architecture.",
     items: [
         {
             institution: "Ege University",
@@ -87,7 +87,7 @@ const education = {
 
 const skills = {
     title: 'Skills',
-    description: "lorem ipsum dolor sit amet",
+    description: "I have experience working with a variety of technologies, including HTML, CSS, JavaScript, React, Next.js and more.",
     skillist: [
         {
             icon: <FaHtml5 />,
@@ -156,7 +156,7 @@ const Resume = () => {
                         {/* experience */}
                         <TabsContent value="experience" className='w-full'>
                             <div className='flex flex-col gap-[30px] text-center xl:text-left'>
-                                <h3 className='text4xl font-bold'>
+                                <h3 className='text-4xl font-bold'>
                                     {experience.title}
                                 </h3>
                                 <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>{experience.description}</p>
@@ -184,7 +184,7 @@ const Resume = () => {
                         {/* education */}
                         <TabsContent value="education" className='w-full'>
                             <div className='flex flex-col gap-[30px] text-center xl:text-left'>
-                                <h3 className='text4xl font-bold'>
+                                <h3 className='text-4xl font-bold'>
                                     {education.title}
                                 </h3>
                                 <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>{education.description}</p>
@@ -243,10 +243,10 @@ const Resume = () => {
 
 
                         <TabsContent value="about" className='w-full text-center xl:text-left'>
-                            <div className='flex flex-col gap-[30px]'>
+                            <div className='flex flex-col gap-[25px]'>
                                 <h3 className='text-4xl font-bold'>{about.title}</h3>
-                                <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>{about.description}</p>
-                                <ul className='grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0'>
+                                <p className='max-w-[800px] text-white/60 mx-auto xl:mx-0'>{about.description}</p>
+                                <ul className='grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[800px] mx-auto xl:mx-0'>
                                     {about.info.map((item, index) => {
                                         return (
                                             <li key={index} className='flex items-center justify-center xl:justify-start gap-4'>

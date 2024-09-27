@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { FaGithub, FaLinkedinIn, FaYoutube, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaYoutube, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 interface SocialsProps {
     containerStyles: string;
@@ -10,19 +10,15 @@ interface SocialsProps {
 const socials = [
     {
         icon: <FaGithub />,
-        path: ""
+        path: "https://github.com/altugaltuner"
     },
     {
         icon: <FaLinkedinIn />,
-        path: ""
+        path: "https://www.linkedin.com/in/altug-altuner/"
     },
     {
-        icon: <FaYoutube />,
-        path: ""
-    },
-    {
-        icon: <FaTwitter />,
-        path: ""
+        icon: <FaInstagram />,
+        path: "https://www.instagram.com/altugaltuner/"
     },
 ]
 
