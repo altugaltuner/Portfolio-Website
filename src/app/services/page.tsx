@@ -8,12 +8,12 @@ const services = [
     {
         num: '01',
         title: 'Web Development',
-        description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        description: 'I can create a website for you with the latest technologies and trends. I am proficient in JS and TS and front end technologies such as React, Next.',
         href: ""
     }, {
         num: '02',
         title: 'UI/UX Design',
-        description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        description: 'I can design a user-friendly interface for your website or application. I can create a design that is both visually appealing and functional and mobile friendly.',
         href: ""
     }
 ]

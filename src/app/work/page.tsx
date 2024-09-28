@@ -19,51 +19,51 @@ const projects = [
         num: "01",
         category: "frontend",
         title: "Wargame LLM ",
-        description: "dlorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+        description: "This is a war simulation game that I work on at Radius Inc. It is a web-based game that is developed with Next.js, Tailwind CSS, and Typescript.",
         stack: [{ name: "Next.js" }, { name: "Tailwind" }, { name: "Typescript" }],
         image: "/work/wargame.png",
         live: "",
-        github: "",
+        github: "https://github.com/bronixEngineering/wargame-nato-llm",
     },
     {
         num: "02",
         category: "frontend",
         title: "Placemaking AI",
-        description: "dlorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+        description: "This project is a cost-effective, revenue-boosting, and market-aligned decision-making for sustainable and future-proof growth website.",
         stack: [{ name: "Next.js" }, { name: "Tailwind" }, { name: "Typescript" }],
         image: "/work/placemaking.png",
-        live: "",
-        github: "",
+        live: "https://www.placemaking.ai/",
+        github: "https://github.com/bronixEngineering/radius-platform-frontend",
     },
     {
         num: "03",
         category: "frontend",
         title: "Ofisim",
-        description: "dlorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+        description: "Ofisim is a comprehensive platform designed to optimize daily operations and improve efficiency for businesses. With modular features and an adaptable interface, it streamlines tasks like task management, team collaboration, and project tracking.",
         stack: [{ name: "React" }, { name: "SASS" }, { name: "Javascript" }],
         image: "/work/ofisim.png",
         live: "",
-        github: "",
+        github: "https://github.com/altugaltuner/arch-website",
     },
     {
         num: "04",
         category: "frontend",
-        title: "project 2",
-        description: "dlorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+        title: "E-Commerce Website",
+        description: "This is a simple e-commerce website that we built with React, SASS, and Javascript at Archi's Academy.",
         stack: [{ name: "React" }, { name: "SASS" }, { name: "Javascript" }],
         image: "/work/e-commerce.png",
         live: "",
-        github: "",
+        github: "https://github.com/archis-academy/coral-buy-feb-2024",
     },
     {
         num: "05",
         category: "frontend",
-        title: "project 2",
-        description: "dlorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+        title: "Food Order Website",
+        description: "This is a simple food order website that I developed with Html 5, Css 3, and Javascript.",
         stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
         image: "/work/foodorder.png",
         live: "",
-        github: "",
+        github: "https://github.com/altugaltuner/food-order-altug",
     },
 ];
 
@@ -88,7 +88,7 @@ const Work = () => {
                                 {project.num}
                             </div>
                             <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                                {project.category} project
+                                {project.title}
                             </h2>
                             <p className="text-white/60">{project.description}</p>
                             <ul className="flex gap-4">

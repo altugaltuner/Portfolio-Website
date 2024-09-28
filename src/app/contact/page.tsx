@@ -25,7 +25,7 @@ const info = [
     {
         icon: <FaMapMarkedAlt />,
         title: 'Address',
-        description: 'Hacı yusuflar mah. Akasya sok. Akçakoca/Düzce'
+        description: 'Düzce/Turkey'
     }
 ]
 

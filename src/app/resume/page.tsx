@@ -1,8 +1,8 @@
 "use client";
 
 import { title } from 'process';
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs } from 'react-icons/fa';
-import { SiNextdotjs, SiTailwindcss } from 'react-icons/si';
+import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma } from 'react-icons/fa';
+import { SiNextdotjs, SiTailwindcss, SiTypescript } from 'react-icons/si';
 
 const about = {
     title: 'About Me',
@@ -102,7 +102,7 @@ const skills = {
             name: "JavaScript",
         },
         {
-            icon: <FaJs />,
+            icon: <SiTypescript />,
             name: "TypeScript",
         },
         {
