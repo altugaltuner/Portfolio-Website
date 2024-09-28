@@ -10,6 +10,7 @@ import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrig
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from 'react-icons/fa';
 import { Description } from "@radix-ui/react-dialog";
 
+
 const info = [
     {
         icon: <FaPhoneAlt />,
@@ -29,6 +30,7 @@ const info = [
 ]
 
 import { motion } from "framer-motion";
+import AiChat from "@/components/AiChat";
 
 const Contact = () => {
 
@@ -145,6 +147,7 @@ const Contact = () => {
                 </div>
             </div>
 
+            <AiChat />
         </motion.section>
     )
 }
