@@ -14,7 +14,7 @@ const about = {
         },
         {
             fieldName: 'Phone',
-            fieldValue: '05395830718',
+            fieldValue: 'ask me',
         },
         {
             fieldName: 'Experience',
