@@ -4,13 +4,15 @@
     "next/typescript"
   ],
   "rules": {
-    "react/no-unesacped-entities": "off",
+    "react/no-unescaped-entities": "off",
     "@typescript-eslint/quotes": "off",
     "quotes": [
-      0
+      "off",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
     ],
-    "avoidEscape": 0,
-    "allowTemplateLiterals": 0,
-    "no-useless-escape": 0,
+    "no-useless-escape": 0
   }
 }

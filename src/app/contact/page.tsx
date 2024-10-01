@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
-import emailjs from "@emailjs/browser"; // Import EmailJS
+import emailjs from "@emailjs/browser";
 
 const info = [
     {
@@ -48,7 +48,7 @@ const Contact = () => {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
 
-        // Send the initial message to you with all form data
+
         emailjs
             .send(
                 "service_lqzmw4t", // Replace with your service ID
@@ -73,11 +73,11 @@ const Contact = () => {
                 },
             );
 
-        setModal(true); // Open the modal after the form is submitted
+        setModal(true);
     };
 
     const toggleModal = () => {
-        setModal(false); // Modalı kapatmak için
+        setModal(false);
     };
 
 
