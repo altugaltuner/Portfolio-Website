@@ -9,7 +9,7 @@ const Home = () => {
 
 
     return (
-        <div className="p-28">
+        <div className="p-14">
             <Chatbot />
 
         </div>
