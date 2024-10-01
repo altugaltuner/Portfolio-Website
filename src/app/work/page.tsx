@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 
 import { BsArrowUpRight, BsGithub } from 'react-icons/bs';
@@ -70,7 +70,9 @@ const projects = [
 const Work = () => {
 
     const [project, setProject] = useState(projects[0]);
-    const handleSlideChange = (swiper: { activeIndex: any; }) => {
+
+
+    const handleSlideChange = (swiper: SwiperClass) => {
         const currentIndex = swiper.activeIndex;
         setProject(projects[currentIndex]);
     };
@@ -93,7 +95,7 @@ const Work = () => {
                             <p className="text-white/60">{project.description}</p>
                             <ul className="flex gap-4">
                                 {project.stack.map((item, index) => (
-                                    <li key={index} className="text-xl text-accent">{item.name}
+                                    <li key={item.name} className="text-xl text-accent">{item.name}
                                         {index !== project.stack.length - 1 && ","}
                                     </li>
                                 ))}
@@ -129,8 +131,8 @@ const Work = () => {
                     </div>
                     <div className="w-full xl:w-[50%]">
                         <Swiper spaceBetween={30} slidesPerView={1} className="xl:h-[625px] mb-12" onSlideChange={handleSlideChange}>
-                            {projects.map((project, index) => (
-                                <SwiperSlide key={index}>
+                            {projects.map((project) => (
+                                <SwiperSlide key={project.title}>
                                     <div className="w-[112%] h-[460px] relative group flex justify-center items-center bg-pink-50/20">
 
                                         <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>

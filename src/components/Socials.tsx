@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { FaGithub, FaLinkedinIn, FaYoutube, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
 interface SocialsProps {
     containerStyles: string;
@@ -25,9 +25,9 @@ const socials = [
 const Socials: React.FC<SocialsProps> = ({ containerStyles, iconStyles }) => {
     return (
         <div className={containerStyles}>
-            {socials.map((item, index) => {
+            {socials.map((item) => {
                 return (
-                    <Link href={item.path} key={index} className={iconStyles}>
+                    <Link href={item.path} key={item.path} className={iconStyles}>
                         {item.icon}
                     </Link>
                 );

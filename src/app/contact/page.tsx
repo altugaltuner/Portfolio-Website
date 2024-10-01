@@ -62,8 +62,7 @@ const Contact = () => {
                 "g0zP0OYZ1rQp9mIRD" // Replace with your public key
             )
             .then(
-                (response) => {
-
+                () => {
                     setFormData({
                         name: "",
                         email: "",
