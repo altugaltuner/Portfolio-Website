@@ -1,3 +1,4 @@
+import Chatbot from "@/components/AiChat";
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
 import Stats from "@/components/Stats";
