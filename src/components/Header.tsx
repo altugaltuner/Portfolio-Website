@@ -19,7 +19,7 @@ const Header = () => {
                         <Button className="hover:bg-green-600">Chat with me</Button>
                     </Link>
                 </div>
-                <div className="">
+                <div>
                     <MobileNav />
                 </div>
             </div>

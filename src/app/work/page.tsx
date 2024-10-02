@@ -23,7 +23,7 @@ const projects = [
         stack: [{ name: "Next.js" }, { name: "Tailwind" }, { name: "Typescript" }],
         image: "/work/wargame.png",
         live: "",
-        github: "https://github.com/bronixEngineering/wargame-nato-llm",
+        github: "https://github.com/bronixEngineering",
     },
     {
         num: "02",
@@ -33,13 +33,13 @@ const projects = [
         stack: [{ name: "Next.js" }, { name: "Tailwind" }, { name: "Typescript" }],
         image: "/work/placemaking.png",
         live: "https://www.placemaking.ai/",
-        github: "https://github.com/bronixEngineering/radius-platform-frontend",
+        github: "https://github.com/bronixEngineering",
     },
     {
         num: "03",
         category: "frontend",
         title: "Ofisim",
-        description: "Ofisim is a comprehensive platform designed to optimize daily operations and improve efficiency for businesses. With modular features and an adaptable interface, it streamlines tasks like task management, team collaboration, and project tracking.",
+        description: "Ofisim is a comprehensive platform designed to optimize daily operations and improve efficiency for businesses.",
         stack: [{ name: "React" }, { name: "SASS" }, { name: "Javascript" }],
         image: "/work/ofisim.png",
         live: "",
@@ -102,7 +102,7 @@ const Work = () => {
                             </ul>
                             <div className="border border-white/20"></div>
                             <div className="flex items-center gap-4">
-                                <Link href={project.live}>
+                                {project.live && (<Link href={project.live}>
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
                                             <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -114,18 +114,22 @@ const Work = () => {
                                         </Tooltip>
                                     </TooltipProvider>
                                 </Link>
-                                <Link href={project.github}>
-                                    <TooltipProvider delayDuration={100}>
-                                        <Tooltip>
-                                            <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                                                <BsGithub className="text-3xl text-white group-hover:text-accent" />
-                                            </TooltipTrigger>
-                                            <TooltipContent>
-                                                <p>Github Repository</p>
-                                            </TooltipContent>
-                                        </Tooltip>
-                                    </TooltipProvider>
-                                </Link>
+                                )}
+
+                                {project.github && (
+                                    <Link href={project.github}>
+                                        <TooltipProvider delayDuration={100}>
+                                            <Tooltip>
+                                                <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                                                    <BsGithub className="text-3xl text-white group-hover:text-accent" />
+                                                </TooltipTrigger>
+                                                <TooltipContent>
+                                                    <p>Github Repository</p>
+                                                </TooltipContent>
+                                            </Tooltip>
+                                        </TooltipProvider>
+                                    </Link>
+                                )}
                             </div>
                         </div>
                     </div>
