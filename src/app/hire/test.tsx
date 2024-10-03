@@ -49,11 +49,12 @@ export default function Home() {
     return (
         <div className='h-[750px] p-[10px] flex flex-col justify-center items-center bg-[#232329] w-[70%] rounded-xl'>
             <div className='w-full bg-white shadow-lg rounded-lg flex flex-col h-full'>
-                <ScrollArea className='flex-1 overflow-auto p-6 scrollbar-thin bg-[#18181e] scrollbar-track-gray-300' ref={scrollAreaRef}
+                <ScrollArea
+                    className='flex-1 overflow-auto p-6 scrollbar-thin bg-[#18181e] scrollbar-track-gray-300'
+                    ref={scrollAreaRef}
                     onScroll={handleScroll}
                 >
-
-                    <div className='py-2 flex justify-start' >
+                    <div className='py-2 flex justify-start'>
                         <div
                             className='inline-block max-w-sm px-5 py-2.5 rounded-3xl bg-[#e0e0e0] text-gray-800'
                         >
