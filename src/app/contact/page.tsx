@@ -130,7 +130,7 @@ const Contact = () => {
                                 value={formData.message}
                                 onChange={handleChange}
                             />
-                            <Button size="md" className="max-w-40 hover:bg-green-600" type="submit">
+                            <Button className="max-w-40 hover:bg-green-600" type="submit">
                                 Send Message
                             </Button>
                         </form>
@@ -157,7 +157,7 @@ const Contact = () => {
                         <div className="bg-white p-6 rounded-lg shadow-lg w-[90%] max-w-md mx-auto text-center">
                             <h2 className="text-2xl mb-4 text-black">Mesajınız Gönderildi!</h2>
                             <p className="text-black">En kısa sürede sizinle iletişime geçeceğim.</p>
-                            <Button size="md" className="mt-4 hover:bg-green-600" onClick={toggleModal}>
+                            <Button className="mt-4 hover:bg-green-600" onClick={toggleModal}>
                                 Kapat
                             </Button>
                         </div>
