@@ -1,3 +1,5 @@
+"use client";
+
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
 import Stats from "@/components/Stats";
@@ -5,6 +7,25 @@ import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
 const Home = () => {
+
+  const trackDownloadEvent = ({ action, category, label, value }: any) => {
+    (window as any).gtag('event', action, {
+      event_category: category,
+      event_label: label,
+      value: value,
+    });
+  };
+
+  const countDownload = () => {
+    trackDownloadEvent({
+      action: 'download_cv',
+      category: 'engagement',
+      label: 'CV downloaded',
+      value: 'Altuğ Altuner CV',
+    });
+  };
+
+
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -20,6 +41,7 @@ const Home = () => {
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <a href="/cv.pdf" download>
                 <Button
+                  onClick={countDownload}
                   variant="outline"
                   size="lg"
                   className="uppercase flex items-center gap-2">

@@ -6,6 +6,9 @@ import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
 import Head from "next/head";
 
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+
+
 const jetBrainsMono = JetBrains_Mono({ subsets: ["latin"], weight: ["100", "300", "400", "500", "700", "800"], variable: "--font-jetbrainsMono" });
 
 export const metadata: Metadata = {
@@ -23,6 +26,7 @@ export default function RootLayout({
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <GoogleAnalytics />
       <body className={jetBrainsMono.variable}>
         <Header />
         <StairTransition />
