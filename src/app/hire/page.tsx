@@ -50,8 +50,8 @@ export default function Home() {
     };
 
     return (
-        <div className='md:min-h-[50rem] min-h-[30rem] p-[10px] flex flex-col justify-center items-center bg-[#232329] w-[90%] rounded-xl'>
-            <div className='w-full bg-white shadow-lg rounded-lg flex flex-col h-full justify-between'>
+        <div className='md:min-h-[35rem] min-h-[30rem] p-[10px] flex flex-col justify-center items-center bg-[#232329] w-[90%] rounded-xl'>
+            <div className='w-full bg-white shadow-lg rounded-lg flex flex-col h-[95%] justify-between'>
                 <ScrollArea className=' overflow-auto p-6 scrollbar-thin bg-[#18181e] scrollbar-track-gray-300' style={{ height: '-webkit-fill-available' }} ref={scrollAreaRef}
                     onScroll={handleScroll}
                 >
