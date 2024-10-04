@@ -141,9 +141,9 @@ const Resume = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeIn" }
         }}
-            className='min-h-[80vh] flex items-center justify-center pb-8 xl:py-0'
+            className='min-h-[95vh] flex items-center justify-center pb-8 xl:py-0'
         >
-            <div className='container mx-auto'>
+            <div className='container mx-auto h-[95vh]'>
                 <Tabs defaultValue='experience' className='flex flex-col xl:flex-row gap-[20px] xl:w-[1000px] md:w-[500px]'>
                     <TabsList className='flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-1 md:gap-6'>
                         <TabsTrigger className='p-1 md:p-3' value="experience">Experience</TabsTrigger>

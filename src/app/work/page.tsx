@@ -68,7 +68,7 @@ const Work = () => {
         <motion.section
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }}
-            className="min-h-[100vh] flex flex-col justify-center md:py-12 xl:px-0 py-2"
+            className="min-h-[90vh] flex flex-col justify-center md:py-12 xl:px-0 py-2"
         >
             <div className="container mx-auto w-full">
                 <div className="flex flex-col-reverse xl:flex-row xl:gap-[30px]">
