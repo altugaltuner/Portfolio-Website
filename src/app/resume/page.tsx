@@ -143,7 +143,7 @@ const Resume = () => {
         }}
             className='flex items-center justify-center h-full'>
 
-            <div className='container mx-auto min-h-screen' style={{ height: '-webkit-fill-available' }}>
+            <div className='container mx-auto min-h-[85vh]' style={{ height: '-webkit-fill-available' }}>
                 <Tabs defaultValue='experience' className='flex flex-col xl:flex-row gap-[20px] xl:w-[1000px] md:w-[300px]'>
                     <TabsList className='flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-1 md:gap-6'>
                         <TabsTrigger className='p-1 md:p-3' value="experience">Experience</TabsTrigger>
