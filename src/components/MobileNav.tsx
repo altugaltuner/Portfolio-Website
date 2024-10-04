@@ -61,7 +61,7 @@ const MobileNav = () => {
                         )
                     })}
                     <Link href="/hire">
-                        <Button className="bg-green-600 hover:bg-green-800 p-5 rounded-3xl">Chat with me</Button>
+                        <Button onClick={handleSheet} className="bg-green-600 hover:bg-green-800 p-5 rounded-3xl">Chat with me</Button>
                     </Link>
                 </nav>
             </SheetContent>

@@ -141,10 +141,10 @@ const Resume = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeIn" }
         }}
-            className='min-h-[95vh] flex items-center justify-center pb-8 xl:py-0'
-        >
-            <div className='container mx-auto h-[95vh]'>
-                <Tabs defaultValue='experience' className='flex flex-col xl:flex-row gap-[20px] xl:w-[1000px] md:w-[500px]'>
+            className='flex items-center justify-center h-full'>
+
+            <div className='container mx-auto min-h-screen'>
+                <Tabs defaultValue='experience' className='flex flex-col xl:flex-row gap-[20px] xl:w-[1000px] md:w-[300px]'>
                     <TabsList className='flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-1 md:gap-6'>
                         <TabsTrigger className='p-1 md:p-3' value="experience">Experience</TabsTrigger>
                         <TabsTrigger className='p-1 md:p-3' value="education">Education</TabsTrigger>
@@ -154,7 +154,7 @@ const Resume = () => {
                     <div className='min-h-[70vh] w-full'>
 
                         <TabsContent value="experience" className='w-full'>
-                            <div className='flex flex-col gap-[5px] md:gap-[30px] text-center xl:text-left w-[400px] md:w-auto'>
+                            <div className='flex flex-col gap-[5px] md:gap-[30px] text-center xl:text-left w-[325px] md:w-auto'>
                                 <h3 className='text-[24px] md:text-4xl font-bold'>
                                     {experience.title}
                                 </h3>
