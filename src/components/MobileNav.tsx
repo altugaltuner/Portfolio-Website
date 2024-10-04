@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from "next/navigation";
 import { useState } from 'react';
 import { CiMenuFries } from "react-icons/ci";
+import { Button } from './ui/button';
 
 
 const links = [
@@ -44,7 +45,7 @@ const MobileNav = () => {
                 <CiMenuFries className='text-[32px] tet-accent' />
             </SheetTrigger>
             <SheetContent className='flex flex-col'>
-                <div className='mt-32 mb-40 text-center text-2xl'>
+                <div className='md:mt-32 md:mb-40 text-center text-2xl mt-28 mb-20'>
                     <h1 className='text-4xl font-semibold'>
                         <Link href="/" onClick={handleSheet}>
                             <h1>Altuğ <span className='text-accent'>.</span>
@@ -63,6 +64,9 @@ const MobileNav = () => {
                             </Link>
                         )
                     })}
+                    <Link href="/hire">
+                        <Button className="bg-green-600 hover:bg-green-800 p-5">Chat with me</Button>
+                    </Link>
                 </nav>
             </SheetContent>
         </Sheet>

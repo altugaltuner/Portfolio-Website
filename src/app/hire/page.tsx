@@ -47,7 +47,7 @@ export default function Home() {
     };
 
     return (
-        <div className='h-[750px] p-[10px] flex flex-col justify-center items-center bg-[#232329] w-[70%] rounded-xl'>
+        <div className='h-[36rem] md:h-[750px] p-[10px] flex flex-col justify-center items-center bg-[#232329] w-[70%] rounded-xl'>
             <div className='w-full bg-white shadow-lg rounded-lg flex flex-col h-full'>
                 <ScrollArea className='flex-1 overflow-auto p-6 scrollbar-thin bg-[#18181e] scrollbar-track-gray-300' ref={scrollAreaRef}
                     onScroll={handleScroll}
@@ -57,7 +57,7 @@ export default function Home() {
                         <div
                             className='inline-block max-w-sm px-5 py-2.5 rounded-3xl bg-[#e0e0e0] text-gray-800'
                         >
-                            <span className='block font-medium'>
+                            <span className='block font-medium md:text-base text-xs'>
                                 Merhaba, ben Altuğ. Size nasıl yardımcı olabilirim?
                             </span>
                         </div>
@@ -79,10 +79,10 @@ export default function Home() {
                     ))}
                 </ScrollArea>
 
-                <div className='flex p-2 bg-[#2f2f35]'>
+                <div className='xs:flex-col md:flex p-2 bg-[#2f2f35]'>
                     <Input
                         type="text"
-                        className='flex-1 px-4 border border-gray-600 text-white rounded-md'
+                        className='flex-1 px-4 border border-gray-300 text-white rounded-md'
                         value={input}
                         onChange={event => {
                             setInput(event.target.value);
@@ -94,7 +94,7 @@ export default function Home() {
                         }}
                     />
                     <Button
-                        className='ml-2 px-4 text-white rounded-md'
+                        className='ml-2 px-4 text-white rounded-md md:w-auto w-[95%] md:mt-0 mt-2'
                         onClick={async () => {
                             await handleSendMessage();
                         }}
