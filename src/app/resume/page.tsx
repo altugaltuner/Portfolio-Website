@@ -144,7 +144,7 @@ const Resume = () => {
             className='min-h-[80vh] flex items-center justify-center pb-8 xl:py-0'
         >
             <div className='container mx-auto'>
-                <Tabs defaultValue='experience' className='flex flex-col xl:flex-row gap-[20px]'>
+                <Tabs defaultValue='experience' className='flex flex-col xl:flex-row gap-[20px] xl:w-[1000px] md:w-[500px]'>
                     <TabsList className='flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-1 md:gap-6'>
                         <TabsTrigger className='p-1 md:p-3' value="experience">Experience</TabsTrigger>
                         <TabsTrigger className='p-1 md:p-3' value="education">Education</TabsTrigger>
@@ -154,12 +154,12 @@ const Resume = () => {
                     <div className='min-h-[70vh] w-full'>
 
                         <TabsContent value="experience" className='w-full'>
-                            <div className='flex flex-col gap-[5px] md:gap-[30px] text-center xl:text-left'>
+                            <div className='flex flex-col gap-[5px] md:gap-[30px] text-center xl:text-left w-[400px] md:w-auto'>
                                 <h3 className='text-[24px] md:text-4xl font-bold'>
                                     {experience.title}
                                 </h3>
                                 <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>{experience.description}</p>
-                                <ScrollArea className='h-[400px]'>
+                                <ScrollArea className='h-auto'>
                                     <ul className='grid grid-cols-1 lg:grid-cols-2 md:gap-[30px] gap-2'>
                                         {experience.items.map((item) => {
                                             return (

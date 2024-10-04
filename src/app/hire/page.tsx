@@ -7,6 +7,7 @@ import { ScrollArea } from '@radix-ui/react-scroll-area';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 export const maxDuration = 30;
 
@@ -56,7 +57,7 @@ export default function Home() {
                 >
                     <div className='py-2 flex justify-start' >
                         <div
-                            className='inline-block max-w-sm px-5 py-2.5 rounded-3xl bg-[#e0e0e0] text-gray-800'
+                            className='inline-block max-w-[50rem] px-5 py-2.5 rounded-3xl bg-[#e0e0e0] text-gray-800'
                         >
                             <span className='block font-medium md:text-base text-xs'>
                                 Merhaba, ben Altuğ. Size nasıl yardımcı olabilirim?
@@ -69,12 +70,12 @@ export default function Home() {
                             key={index}
                         >
                             <div
-                                className={`inline-block max-w-sm px-5 py-2.5 rounded-3xl ${message.role === 'user' ? 'bg-[#f4f4f4] text-blue-600' : 'bg-[#e0e0e0] text-gray-800'}`}
+                                className={`inline-block max-w-[50rem] px-5 py-2.5 rounded-3xl ${message.role === 'user' ? 'bg-[#f4f4f4] text-blue-600' : 'bg-[#e0e0e0] text-gray-800'}`}
                             >
                                 <span className='block font-medium'>
                                     {message.role === 'user' ? 'Misafir' : ''}
                                 </span>
-                                <ReactMarkdown>{message.content}</ReactMarkdown>
+                                <ReactMarkdown remarkPlugins={[remarkGfm]}>{message.content}</ReactMarkdown>
                             </div>
                         </div>
                     ))}
