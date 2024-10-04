@@ -89,7 +89,6 @@ const Work = () => {
                                     </li>
                                 ))}
                             </ul>
-                            <div className="border border-white/20"></div>
                             <div className="flex items-center gap-4 pb-2">
                                 {selectedProject.live && (
                                     <Link href={selectedProject.live}>

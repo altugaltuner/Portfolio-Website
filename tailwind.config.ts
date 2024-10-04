@@ -26,7 +26,7 @@ const config: Config = {
 		extend: {
 			height: {
 				'custom-75': 'calc(75vh + 90px)',
-				'custom-140': 'calc(100vh - 140px)',
+				'custom-140': 'calc(100vh - 180px)',
 			},
 			screens: {
 				'lg': '1280px',
