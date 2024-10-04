@@ -13,7 +13,7 @@ const about = {
         },
         {
             fieldName: 'Phone',
-            fieldValue: 'ask me',
+            fieldValue: '+90 539 583 07 18',
         },
         {
             fieldName: 'Experience',
