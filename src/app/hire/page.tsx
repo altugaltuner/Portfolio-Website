@@ -6,6 +6,7 @@ import { continueConversation, Message } from '../actions';
 import { ScrollArea } from '@radix-ui/react-scroll-area';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import ReactMarkdown from 'react-markdown';
 
 export const maxDuration = 30;
 
@@ -73,7 +74,7 @@ export default function Home() {
                                 <span className='block font-medium'>
                                     {message.role === 'user' ? 'Misafir' : ''}
                                 </span>
-                                <p className='text-black'>{message.content}</p>
+                                <ReactMarkdown>{message.content}</ReactMarkdown>
                             </div>
                         </div>
                     ))}
