@@ -1,5 +1,4 @@
 "use client";
-
 import CountUp from 'react-countup';
 
 const stats = [
@@ -39,6 +38,5 @@ const Stats = () => {
         </section>
     )
 }
-
 
 export default Stats

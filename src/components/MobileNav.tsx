@@ -1,12 +1,10 @@
 "use client";
-
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Link from 'next/link';
 import { usePathname } from "next/navigation";
 import { useState } from 'react';
 import { CiMenuFries } from "react-icons/ci";
 import { Button } from './ui/button';
-
 
 const links = [
     {
@@ -31,14 +29,12 @@ const links = [
     },
 ]
 const MobileNav = () => {
-
     const pathname = usePathname();
     const [visible, setVisible] = useState(false);
 
     const handleSheet = () => {
         setVisible(false);
     }
-
     return (
         <Sheet open={visible} onOpenChange={setVisible}>
             <SheetTrigger className='flex justify-center items-center'>
@@ -72,5 +68,4 @@ const MobileNav = () => {
         </Sheet>
     )
 }
-
 export default MobileNav

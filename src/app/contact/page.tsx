@@ -1,5 +1,3 @@
-// page.tsx
-
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -51,15 +49,15 @@ const Contact = () => {
 
         emailjs
             .send(
-                "service_lqzmw4t", // Replace with your service ID
-                "template_oaspjnr", // Replace with your template ID
+                "service_lqzmw4t", // ID
+                "template_oaspjnr", // template ID
                 {
                     name: formData.name,
                     email: formData.email,
                     phone: formData.phone,
                     message: formData.message,
                 },
-                "g0zP0OYZ1rQp9mIRD" // Replace with your public key
+                "g0zP0OYZ1rQp9mIRD" // public key
             )
             .then(
                 () => {
@@ -151,12 +149,11 @@ const Contact = () => {
                         </ul>
                     </div>
                 </div>
-                {/* Modal */}
                 {modal && (
                     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
                         <div className="bg-white p-6 rounded-lg shadow-lg w-[90%] max-w-md mx-auto text-center">
                             <h2 className="text-2xl mb-4 text-black">Mesajınız Gönderildi!</h2>
-                            <p className="text-black">En kısa sürede sizinle iletişime geçeceğim.</p>
+                            <p className="text-black">En kısa sürede size geri dönüş yapacağım.</p>
                             <Button className="mt-4 hover:bg-green-600" onClick={toggleModal}>
                                 Kapat
                             </Button>

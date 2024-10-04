@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import React from 'react'
 
-// variants
 const stairAnimation = {
     initial: {
         top: "0%",
@@ -15,14 +14,13 @@ const stairAnimation = {
 }
 
 const reverseIndex = (index: number) => {
-    const totalSteps = 6; //number of steps
+    const totalSteps = 6;
     return totalSteps - index - 1;
 }
 
 const Stairs = () => {
     return (
         <>
-            {/*render 6 motion divs, each representing a step of the stairs */}
             {[...Array(6)].map((_, index) => {
                 return (
                     <motion.div key={index} variants={stairAnimation} initial="initial" animate="animate" exit="exit"

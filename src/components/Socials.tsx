@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 import { FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
 interface SocialsProps {
