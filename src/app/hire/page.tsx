@@ -37,7 +37,8 @@ export default function Home() {
         if (isAutoScrollEnabled && scrollAreaRef.current) {
             scrollAreaRef.current.scrollTop = scrollAreaRef.current.scrollHeight;
         }
-    }, [conversation]);
+    }, [conversation, isAutoScrollEnabled]);
+
 
     const handleScroll = () => {
         if (scrollAreaRef.current) {
@@ -52,7 +53,6 @@ export default function Home() {
                 <ScrollArea className='flex-1 overflow-auto p-6 scrollbar-thin bg-[#18181e] scrollbar-track-gray-300' ref={scrollAreaRef}
                     onScroll={handleScroll}
                 >
-
                     <div className='py-2 flex justify-start' >
                         <div
                             className='inline-block max-w-sm px-5 py-2.5 rounded-3xl bg-[#e0e0e0] text-gray-800'
