@@ -72,8 +72,8 @@ const Work = () => {
         >
             <div className="container mx-auto w-full">
                 <div className="flex flex-col-reverse xl:flex-row xl:gap-[30px]">
-                    <div className="w-full xl:w-[50%] xl:h-[460px] min-h-[400px] flex flex-col xl:justify-between order-2 xl:order-none">
-                        <div className="flex flex-col md:gap-[30px] gap-[15px] h-[50%] min-h-[400px]">
+                    <div className="w-full xl:w-[50%] xl:h-[460px] min-h-[320px] flex flex-col xl:justify-between order-2 xl:order-none">
+                        <div className="flex flex-col md:gap-[30px] gap-[15px] h-[50%] min-h-[320px]">
                             <div className="md:text-8xl text-4xl leading-none font-extrabold text-transparent text-outline">
                                 {selectedProject.num}
                             </div>
@@ -124,7 +124,7 @@ const Work = () => {
                         </div>
                     </div>
                     <div className="w-full xl:w-[50%] mt-8 xl:mt-0">
-                        <div className=" h-[300px] sm:h-[350px] md:h-[400px] xl:h-[460px] xl:w-[700px]  relative group flex justify-center items-center bg-pink-50/20">
+                        <div className=" h-[220px] sm:h-[350px] md:h-[400px] xl:h-[460px] xl:w-[700px]  relative group flex justify-center items-center bg-pink-50/20">
                             <Image src={selectedProject.image} fill className="object-cover" alt={selectedProject.title} />
                         </div>
                     </div>

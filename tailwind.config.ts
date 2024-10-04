@@ -24,6 +24,13 @@ const config: Config = {
 		},
 
 		extend: {
+			height: {
+				'custom-75': 'calc(100vh - 75px)',
+				'custom-140': 'calc(100vh - 140px)',
+			},
+			screens: {
+				'lg': '1280px',
+			},
 			colors: {
 				primary: '#1c1c22',
 				accent: {

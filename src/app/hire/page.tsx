@@ -50,16 +50,16 @@ export default function Home() {
     };
 
     return (
-        <div className='h-[36rem] md:h-[750px] p-[10px] flex flex-col justify-center items-center bg-[#232329] w-[70%] rounded-xl'>
-            <div className='w-full bg-white shadow-lg rounded-lg flex flex-col h-full'>
-                <ScrollArea className='flex-1 overflow-auto p-6 scrollbar-thin bg-[#18181e] scrollbar-track-gray-300' ref={scrollAreaRef}
+        <div className='md:min-h-[50rem] min-h-[30rem] p-[10px] flex flex-col justify-center items-center bg-[#232329] w-[90%] rounded-xl'>
+            <div className='w-full bg-white shadow-lg rounded-lg flex flex-col h-full justify-between'>
+                <ScrollArea className=' overflow-auto p-6 scrollbar-thin bg-[#18181e] scrollbar-track-gray-300' style={{ height: '-webkit-fill-available' }} ref={scrollAreaRef}
                     onScroll={handleScroll}
                 >
                     <div className='py-2 flex justify-start' >
                         <div
                             className='inline-block max-w-[50rem] px-5 py-2.5 rounded-3xl bg-[#e0e0e0] text-gray-800'
                         >
-                            <span className='block font-medium md:text-base text-xs'>
+                            <span className='block font-medium md:text-base text-[10px] leading-3'>
                                 Merhaba, ben Altuğ. Size nasıl yardımcı olabilirim?
                             </span>
                         </div>
@@ -84,7 +84,7 @@ export default function Home() {
                 <div className='xs:flex-col md:flex p-2 bg-[#2f2f35]'>
                     <Input
                         type="text"
-                        className='flex-1 px-4 border border-gray-300 text-white rounded-md'
+                        className='flex-1 px-4 border border-gray-500 text-white rounded-md bg-[#2f2f35]'
                         value={input}
                         onChange={event => {
                             setInput(event.target.value);
@@ -96,7 +96,7 @@ export default function Home() {
                         }}
                     />
                     <Button
-                        className='ml-2 px-4 text-white rounded-md md:w-auto w-[95%] md:mt-0 mt-2'
+                        className=' px-4 text-white rounded-md md:w-auto w-[100%] md:mt-0 mt-2'
                         onClick={async () => {
                             await handleSendMessage();
                         }}

@@ -12,7 +12,7 @@ const PageTransition = ({ children }: PageTransitionProps) => {
     const pathname = usePathname();
     return (
         <AnimatePresence>
-            <div className="flex justify-center" key={pathname}>
+            <div className="flex justify-center lg:h-custom-140 h-custom-75" key={pathname}>
                 <motion.div initial={{ opacity: 1 }} animate={{ opacity: 0, transition: { delay: 1, duration: 0.4, ease: "easeInOut" }, }} className="h-screen w-screen fixed bg-primary top-8 pointer-events-none"
                 />
                 {children}
