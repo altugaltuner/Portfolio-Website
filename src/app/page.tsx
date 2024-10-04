@@ -30,7 +30,7 @@ const Home = () => {
 
   return (
     <section className="h-full">
-      <div className="container mx-auto h-full">
+      <div className="container mx-auto xl:h-[90%]">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pb-8">
 
           <div className="text-center xl:text-left order-2 xl:order-none">
